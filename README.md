@@ -17,6 +17,10 @@ Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentime
 ## Endpoints:
 ![uji endpoint](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/443e26a7-efea-4448-8628-b4cd676c3ccc)
 
+Kemudian juga disediakan sebuah Frontend sederhana menggunakan `index.html` dan `styles.css` dengan tampilan antarmuka sebagai berikut
+
+<img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/d0dfde10-b3a6-4ff0-b0d6-108c1fd783d2>
+Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutuhan aplikasi tersebut. Apabila dana maksimal yang diberikan adalah 1 juta rupiah per bulan (65 US$) konfigurasi cloud terbaik seperti apa yang bisa dibuat?
 
 ## Rancangan Arsitektur
 ## Langkah Implementasi dan Konfigurasi Teknologi
