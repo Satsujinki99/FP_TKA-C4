@@ -25,24 +25,11 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 ## Rancangan Arsitektur
 ![image](https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/2ac40946-80a8-4065-b5b2-0e06cc6ef89d)
 
+![image](https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/f71ae97e-f4f0-4a93-b97d-2e9502622e60)
+
 Pada rancangan arsitektur cloud kami, kami menggunakan 2 vm worker, 1 load balancer dan 1 database Server MongoDB sesuai gambar diatas.  
-## Langkah Implementasi dan Konfigurasi Teknologi
-1. Buat database dan copy connection stringn
-   ![IMG-20240621-WA0027](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/2f0762c0-bd56-43ee-938e-19c96a63a113)
-3. Buat database sesuai dengan variabel yang sudah dibuat di dalam app.py
-4. Create database baru dengan collection order, add data (import json file)lalu pilih file orders.json yang berisi data-data yang akan dimasukan ke database
-5. Run app.py hingga muncul url-nya
-6. Untuk mengecek database-nya bisa menggunakan postman, request ke url/orders. Jika statusnya sudah 200 ok, maka database sudah bisa berjalan dengan normal
-7. Deploy VM untuk worker dengan installasi requirement yang diperlukan di worker
-8. Buat Load Balancer dan pilih droplet worker yang sudah dibuat sebelumnya
-9. Jika tidak ada error, maka selanjutnya bisa dilakukan load tetsting locust
-   
-## Hasil Pengujian Setiap Endpoint
-1. Get All Orders
-2. Get a Specific Orders by ID
-3. Create a New Order
-4. Update an Order by ID
-5. Delete an Order by ID
+
+
 
 ## Hasil Pengujian dan Analisis Loadtesting Locust
 - RPS Maksimum (load testing 60 detik)
