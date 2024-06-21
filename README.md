@@ -20,10 +20,11 @@ Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentime
 
 ## Rancangan Arsitektur
 ![IMG-20240621-WA0028](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/79f4c770-89cf-4cbd-939b-edeb507a61c9)
-![IMG-20240621-WA0027](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/64eb825f-d926-4c47-a1c8-847fa4687857)
 ![IMG-20240621-WA0034](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/f28e3679-ef3c-41e8-a559-159e3519c99a)
 
 ## Langkah Implementasi dan Konfigurasi Teknologi
+1. Buat database dan copy connection string
+![IMG-20240621-WA0027](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/64eb825f-d926-4c47-a1c8-847fa4687857)
 
 ## Hasil Pengujian Setiap Endpoint
 
