@@ -15,6 +15,8 @@ Anda adalah seorang lulusan Teknologi Informasi, sebagai ahli IT, salah satu kem
 Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentiment Analysis dengan komponen Backend menggunakan python: sentiment-analysis.py dengan spesifikasi sebagai berikut
 
 ## Endpoints:
+![uji endpoint](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/443e26a7-efea-4448-8628-b4cd676c3ccc)
+
 
 ## Rancangan Arsitektur
 ![IMG-20240621-WA0028](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/79f4c770-89cf-4cbd-939b-edeb507a61c9)
