@@ -19,7 +19,7 @@ Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentime
 
 ![image](https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/f71ae97e-f4f0-4a93-b97d-2e9502622e60)
 
-Pada rancangan arsitektur cloud kami, kami menggunakan 2 vm worker, 1 load balancer dan 1 database Server MongoDB sesuai gambar diatas.  
+Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk menggunakan Digital Ocean sebagai lingkungan cloud kami. Keputusan ini dibuat karena lingkungan cloud ini paling mudah digunakan dan menawarkan kredit gratis jika Anda memiliki pendidikan github. Dari semua penyedia cloud, kami percaya bahwa Digital Ocean adalah yang paling mudah dipahami. Pada rancangan arsitektur cloud kami, kami menggunakan 2 vm worker, 1 load balancer dan 1 database Server MongoDB sesuai gambar diatas.
 
 ## Endpoints:
 ![uji endpoint](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/443e26a7-efea-4448-8628-b4cd676c3ccc)
