@@ -25,13 +25,28 @@ Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentime
 ## Langkah Implementasi dan Konfigurasi Teknologi
 1. Buat database dan copy connection string
 ![IMG-20240621-WA0027](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/64eb825f-d926-4c47-a1c8-847fa4687857)
-
+2. Create new connection dengan string database yang sudah di-copy sebelumnya
+3. Buat database sesuai dengan variabel yang sudah dibuat di dalam app.py
+4. Create database baru dengan collection order, add data (import json file)lalu pilih file orders.json yang berisi data-data yang akan dimasukan ke database
+5. Run app.py hingga muncul url-nya
+6. Untuk mengecek database-nya bisa menggunakan postman, request ke url/orders. Jika statusnya sudah 200 ok, maka database sudah bisa berjalan dengan normal
+7. Deploy VM untuk worker dengan installasi requirement yang diperlukan di worker
+8. Buat Load Balancer dan pilih droplet worker yang sudah dibuat sebelumnya
+9. Jika tidak ada error, maka selanjutnya bisa dilakukan load tetsting locust
+   
 ## Hasil Pengujian Setiap Endpoint
-
+1. Get All Orders
+2. Get a Specific Orders by ID
+3. Create a New Order
+4. Update an Order by ID
+5. Delete an Order by ID
 ![IMG-20240621-WA0026](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/15115398-685d-4af6-975b-6ac5fcc860c7)
 
 ## Hasil Pengujian dan Analisis Loadtesting Locust
-
+- RPS Maksimum (load testing 60 detik)
+- Peak Concurrency Maksimum (spawn rate 25, load testing 60 detik)
+- Peak Concurrency Maksimum (spawn rate 50, load testing 60 detik)
+- Peak Concurrency Maksimum (spawn rate 100, load testing 60 detik)
 ## Kesimpulan dan Saran
 ![IMG-20240621-WA0033](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/daac992c-160b-4f88-841f-e4b05821087b)
 ![IMG-20240621-WA0032](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/07565147-658f-4c29-9268-8ae3c68b2ea6)
