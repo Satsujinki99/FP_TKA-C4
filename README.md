@@ -17,7 +17,6 @@ Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentime
 ## Endpoints:
 
 ## Rancangan Arsitektur
-![IMG-20240621-WA0029](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/79956232-1688-4952-bc46-164ce3d6de35)
 ![IMG-20240621-WA0028](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/79f4c770-89cf-4cbd-939b-edeb507a61c9)
 ![IMG-20240621-WA0027](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/64eb825f-d926-4c47-a1c8-847fa4687857)
 
@@ -43,3 +42,5 @@ Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentime
 ![IMG-20240621-WA0036](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/f079aada-89ad-4fe9-be0a-0ebc7193f655)
 ![IMG-20240621-WA0035](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/1486c132-ca3a-4836-b8c7-73ec28a98c2d)
 ![IMG-20240621-WA0034](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/f28e3679-ef3c-41e8-a559-159e3519c99a)
+![IMG-20240621-WA0029](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/79956232-1688-4952-bc46-164ce3d6de35)
+
