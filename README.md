@@ -22,15 +22,13 @@ Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentime
 ## Langkah Implementasi dan Konfigurasi Teknologi
 1. Buat database dan copy connection stringn
    ![IMG-20240621-WA0027](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/2f0762c0-bd56-43ee-938e-19c96a63a113)
-2.Create new connection dengan string database yan
-g sudah di-copy sebelumnya
-4. Buat database sesuai dengan variabel yang sudah dibuat di dalam app.py
-5. Create database baru dengan collection order, add data (import json file)lalu pilih file orders.json yang berisi data-data yang akan dimasukan ke database
-6. Run app.py hingga muncul url-nya
-7. Untuk mengecek database-nya bisa menggunakan postman, request ke url/orders. Jika statusnya sudah 200 ok, maka database sudah bisa berjalan dengan normal
-8. Deploy VM untuk worker dengan installasi requirement yang diperlukan di worker
-9. Buat Load Balancer dan pilih droplet worker yang sudah dibuat sebelumnya
-10. Jika tidak ada error, maka selanjutnya bisa dilakukan load tetsting locust
+3. Buat database sesuai dengan variabel yang sudah dibuat di dalam app.py
+4. Create database baru dengan collection order, add data (import json file)lalu pilih file orders.json yang berisi data-data yang akan dimasukan ke database
+5. Run app.py hingga muncul url-nya
+6. Untuk mengecek database-nya bisa menggunakan postman, request ke url/orders. Jika statusnya sudah 200 ok, maka database sudah bisa berjalan dengan normal
+7. Deploy VM untuk worker dengan installasi requirement yang diperlukan di worker
+8. Buat Load Balancer dan pilih droplet worker yang sudah dibuat sebelumnya
+9. Jika tidak ada error, maka selanjutnya bisa dilakukan load tetsting locust
    
 ## Hasil Pengujian Setiap Endpoint
 1. Get All Orders
@@ -41,6 +39,7 @@ g sudah di-copy sebelumnya
 
 ## Hasil Pengujian dan Analisis Loadtesting Locust
 - RPS Maksimum (load testing 60 detik)
+  ![IMG-20240621-WA0026](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/d832470c-b28d-4560-9161-09ebe22086ca)
 - Peak Concurrency Maksimum (spawn rate 25, load testing 60 detik)
 - Peak Concurrency Maksimum (spawn rate 50, load testing 60 detik)
 - Peak Concurrency Maksimum (spawn rate 100, load testing 60 detik)
