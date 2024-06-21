@@ -19,20 +19,18 @@ Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentime
 
 
 ## Rancangan Arsitektur
-![IMG-20240621-WA0028](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/79f4c770-89cf-4cbd-939b-edeb507a61c9)
-![IMG-20240621-WA0034](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/f28e3679-ef3c-41e8-a559-159e3519c99a)
-
 ## Langkah Implementasi dan Konfigurasi Teknologi
-1. Buat database dan copy connection string
-![IMG-20240621-WA0027](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/64eb825f-d926-4c47-a1c8-847fa4687857)
-2. Create new connection dengan string database yang sudah di-copy sebelumnya
-3. Buat database sesuai dengan variabel yang sudah dibuat di dalam app.py
-4. Create database baru dengan collection order, add data (import json file)lalu pilih file orders.json yang berisi data-data yang akan dimasukan ke database
-5. Run app.py hingga muncul url-nya
-6. Untuk mengecek database-nya bisa menggunakan postman, request ke url/orders. Jika statusnya sudah 200 ok, maka database sudah bisa berjalan dengan normal
-7. Deploy VM untuk worker dengan installasi requirement yang diperlukan di worker
-8. Buat Load Balancer dan pilih droplet worker yang sudah dibuat sebelumnya
-9. Jika tidak ada error, maka selanjutnya bisa dilakukan load tetsting locust
+1. Buat database dan copy connection stringn
+   ![IMG-20240621-WA0027](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/2f0762c0-bd56-43ee-938e-19c96a63a113)
+2.Create new connection dengan string database yan
+g sudah di-copy sebelumnya
+4. Buat database sesuai dengan variabel yang sudah dibuat di dalam app.py
+5. Create database baru dengan collection order, add data (import json file)lalu pilih file orders.json yang berisi data-data yang akan dimasukan ke database
+6. Run app.py hingga muncul url-nya
+7. Untuk mengecek database-nya bisa menggunakan postman, request ke url/orders. Jika statusnya sudah 200 ok, maka database sudah bisa berjalan dengan normal
+8. Deploy VM untuk worker dengan installasi requirement yang diperlukan di worker
+9. Buat Load Balancer dan pilih droplet worker yang sudah dibuat sebelumnya
+10. Jika tidak ada error, maka selanjutnya bisa dilakukan load tetsting locust
    
 ## Hasil Pengujian Setiap Endpoint
 1. Get All Orders
@@ -40,7 +38,6 @@ Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentime
 3. Create a New Order
 4. Update an Order by ID
 5. Delete an Order by ID
-![IMG-20240621-WA0026](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/15115398-685d-4af6-975b-6ac5fcc860c7)
 
 ## Hasil Pengujian dan Analisis Loadtesting Locust
 - RPS Maksimum (load testing 60 detik)
@@ -48,18 +45,3 @@ Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentime
 - Peak Concurrency Maksimum (spawn rate 50, load testing 60 detik)
 - Peak Concurrency Maksimum (spawn rate 100, load testing 60 detik)
 ## Kesimpulan dan Saran
-![IMG-20240621-WA0033](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/daac992c-160b-4f88-841f-e4b05821087b)
-![IMG-20240621-WA0032](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/07565147-658f-4c29-9268-8ae3c68b2ea6)
-![IMG-20240621-WA0031](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/06721cb8-2bd8-44a5-b172-427218414f19)
-![IMG-20240621-WA0030](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/08046d18-7d7a-4431-b8ba-c5f0568ecfe3)
-![IMG-20240621-WA0025](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/27653ef2-15ec-41c3-a121-d6876559c8bd)
-![IMG-20240621-WA0046](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/405efef2-fc00-44f7-a7f6-847a673eaef1)
-![IMG-20240621-WA0043](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/e7e59be6-3301-42fa-94e0-594eee8d57bd)
-![IMG-20240621-WA0040](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/e0118fc2-df19-4a0f-940a-0539396ba8f4)
-![IMG-20240621-WA0038](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/48aaa045-e436-4825-aca4-9235daf339c0)
-![IMG-20240621-WA0037](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/ada0be8d-763a-453e-b8b8-3f1d8718f41e)
-![IMG-20240621-WA0036](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/f079aada-89ad-4fe9-be0a-0ebc7193f655)
-![IMG-20240621-WA0035](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/1486c132-ca3a-4836-b8c7-73ec28a98c2d)
-![IMG-20240621-WA0029](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/79956232-1688-4952-bc46-164ce3d6de35)
-
-![IMG-20240621-WA0039](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/f1e6fba0-3e88-4036-81f0-96320de30ca1)
