@@ -34,8 +34,6 @@ Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentime
 ![IMG-20240621-WA0027](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/64eb825f-d926-4c47-a1c8-847fa4687857)
 ![IMG-20240621-WA0026](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/15115398-685d-4af6-975b-6ac5fcc860c7)
 ![IMG-20240621-WA0025](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/27653ef2-15ec-41c3-a121-d6876559c8bd)
-![IMG20240620202132](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/63631710-46f4-4fc6-9da4-963d46550ad4)
-![IMG20240619152749](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/0db697e0-460d-4c6e-bf58-62ab576ca52f)
 ![IMG-20240621-WA0046](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/405efef2-fc00-44f7-a7f6-847a673eaef1)
 ![IMG-20240621-WA0043](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/e7e59be6-3301-42fa-94e0-594eee8d57bd)
 ![IMG-20240621-WA0040](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/e0118fc2-df19-4a0f-940a-0539396ba8f4)
