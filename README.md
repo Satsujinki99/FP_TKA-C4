@@ -26,14 +26,6 @@ Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk meng
 
 <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/d0dfde10-b3a6-4ff0-b0d6-108c1fd783d2>
 
-## Rancangan Arsitektur
-![image](https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/2ac40946-80a8-4065-b5b2-0e06cc6ef89d)
-
-![image](https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/f71ae97e-f4f0-4a93-b97d-2e9502622e60)
-
-Pada rancangan arsitektur cloud kami, kami menggunakan 2 vm worker, 1 load balancer dan 1 database Server MongoDB sesuai gambar diatas.  
-
-
 
 ## Hasil Pengujian dan Analisis Loadtesting Locust
 - RPS Maksimum (load testing 60 detik)
