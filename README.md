@@ -23,7 +23,7 @@ Kemudian juga disediakan sebuah Frontend sederhana menggunakan `index.html` dan 
 Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutuhan aplikasi tersebut. Apabila dana maksimal yang diberikan adalah 1 juta rupiah per bulan (65 US$) konfigurasi cloud terbaik seperti apa yang bisa dibuat?
 
 ## Rancangan Arsitektur
-![WhatsApp Image 2024-06-13 at 09 41 57_10834dfa](https://github.com/Satsujinki99/FP_TKA-C4/assets/146155753/8c942d84-5766-4022-b499-ee53ab2ac864)
+![image](https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/2ac40946-80a8-4065-b5b2-0e06cc6ef89d)
 
 Pada rancangan arsitektur cloud kami, kami menggunakan 2 vm worker, 1 load balancer dan 1 database Server MongoDB sesuai gambar diatas.  
 ## Langkah Implementasi dan Konfigurasi Teknologi
