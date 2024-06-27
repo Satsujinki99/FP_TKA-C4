@@ -1,4 +1,4 @@
-# FINAL PROJECT TKA
+# FINAL PROJECT TEKNOLOGI KOMPUTASI AWAN
 
 *KELOMPOK C4*
 | Nama | NRP |
@@ -38,11 +38,24 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 -----
 
 ## Rancangan Arsitektur
-![image](https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/2ac40946-80a8-4065-b5b2-0e06cc6ef89d)
+<img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/2ac40946-80a8-4065-b5b2-0e06cc6ef89d>
 
-![image](https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/f71ae97e-f4f0-4a93-b97d-2e9502622e60)
+<img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/f71ae97e-f4f0-4a93-b97d-2e9502622e60>
 
-Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk menggunakan Digital Ocean sebagai lingkungan cloud kami. Keputusan ini dibuat karena lingkungan cloud ini paling mudah digunakan dan menawarkan kredit gratis jika Anda memiliki pendidikan github. Dari semua penyedia cloud, kami percaya bahwa Digital Ocean adalah yang paling mudah dipahami. Pada rancangan arsitektur cloud kami, kami menggunakan 2 vm worker, 1 load balancer dan 1 database Server MongoDB sesuai gambar diatas.
+## INI DIPERBAIKI KALIMAT NYA KARENA ADA PERUBAHAN DI ARISTEKTURNYA
+Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk menggunakan Digital Ocean sebagai lingkungan cloud kami. Keputusan ini dibuat karena lingkungan cloud ini paling mudah digunakan dan menawarkan kredit gratis jika Anda memiliki pendidikan github. Dari semua penyedia cloud, kami percaya bahwa Digital Ocean adalah yang paling mudah dipahami. Pada rancangan arsitektur cloud kami, kami menggunakan 3 vm worker, 1 Frontend & Database, 1 Load Balancer dan 1 Database Server MongoDB sesuai gambar diatas.
+
+<img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/b5d9cd32-21e0-445e-b3c7-b0a531a66106>
+
+<img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/f1110b82-6b2c-4dd2-bc40-80b870013653>
+
+
+## Hasil Pengujian Setiap Endpoint
+### Pengujian dengan Hoppscotch
+<img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/8a2ba3bf-cb7d-490f-862a-8e8f95b5f5ac>
+
+### Pengujian dari web
+<img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/0b5a0b12-d861-41b0-b7d6-e1c41c208164>
 
 ## Hasil Pengujian dan Analisis Loadtesting Locust
 - Peak Concurrency Maksimum (spawn rate 50, load testing 60 detik)
@@ -55,6 +68,4 @@ Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk meng
   <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/f5d892f0-948b-496d-9c33-89bd7987fe8b>
   
 ## Kesimpulan dan Saran
-![uji endpoint](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/443e26a7-efea-4448-8628-b4cd676c3ccc)
 
-<img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/d0dfde10-b3a6-4ff0-b0d6-108c1fd783d2>
