@@ -15,9 +15,27 @@ Anda adalah seorang lulusan Teknologi Informasi, sebagai ahli IT, salah satu kem
 Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentiment Analysis dengan komponen Backend menggunakan python: sentiment-analysis.py dengan spesifikasi sebagai berikut
 
 ## Endpoints:
-![uji endpoint](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/443e26a7-efea-4448-8628-b4cd676c3ccc)
 
-<img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/d0dfde10-b3a6-4ff0-b0d6-108c1fd783d2>
+#### 1. Analyze Text
+  - Endpoint: `POST /analyze`
+  - Description: This endpoint accepts a text input and returns the sentiment score of the text.
+  - Request:
+    <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/ff0cc87c-c389-4845-8a67-0260fde9f7b3>
+  - Request:
+    <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/1dc14f3e-4b26-4d31-8527-3c675e2df980>
+
+#### 2. Retrieve History
+  - Endpoint: `GET /history`
+  - Description: This endpoint retrieves the history of previously analyzed texts along with their sentiment scores.
+  - Request:
+    <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/3483d9c4-e835-4433-a89b-e3e36341bf67>
+----
+Kemudian juga disediakan sebuah Frontend sederhana menggunakan index.html dan styles.css dengan tampilan antarmuka sebagai berikut
+
+<img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/9f51dc0a-41a7-4142-89ed-0c43663fb430>
+Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutuhan aplikasi tersebut. Apabila dana maksimal yang diberikan adalah 1 juta rupiah per bulan (65 US$) konfigurasi cloud terbaik seperti apa yang bisa dibuat?
+
+-----
 
 ## Rancangan Arsitektur
 ![image](https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/2ac40946-80a8-4065-b5b2-0e06cc6ef89d)
@@ -33,3 +51,6 @@ Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk meng
 - Peak Concurrency Maksimum (spawn rate 50, load testing 60 detik)
 - Peak Concurrency Maksimum (spawn rate 100, load testing 60 detik)
 ## Kesimpulan dan Saran
+![uji endpoint](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/443e26a7-efea-4448-8628-b4cd676c3ccc)
+
+<img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/d0dfde10-b3a6-4ff0-b0d6-108c1fd783d2>
