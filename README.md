@@ -45,11 +45,15 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk menggunakan Digital Ocean sebagai lingkungan cloud kami. Keputusan ini dibuat karena lingkungan cloud ini paling mudah digunakan dan menawarkan kredit gratis jika Anda memiliki pendidikan github. Dari semua penyedia cloud, kami percaya bahwa Digital Ocean adalah yang paling mudah dipahami. Pada rancangan arsitektur cloud kami, kami menggunakan 2 vm worker, 1 load balancer dan 1 database Server MongoDB sesuai gambar diatas.
 
 ## Hasil Pengujian dan Analisis Loadtesting Locust
-- RPS Maksimum (load testing 60 detik)
-  ![IMG-20240621-WA0026](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/d832470c-b28d-4560-9161-09ebe22086ca)
-- Peak Concurrency Maksimum (spawn rate 25, load testing 60 detik)
 - Peak Concurrency Maksimum (spawn rate 50, load testing 60 detik)
+  <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/5ae17505-5d76-411a-818a-f55f1c3c3e92>
 - Peak Concurrency Maksimum (spawn rate 100, load testing 60 detik)
+  <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/ea27f928-152c-4fb7-b89c-b34328653ff2>
+- Peak Concurrency Maksimum (spawn rate 200, load testing 60 detik)
+  <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/8e2ad6e5-63cf-4e7b-8506-a97e7cc3eaed>
+- Peak Concurrency Maksimum (spawn rate 500, load testing 60 detik)
+  <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/f5d892f0-948b-496d-9c33-89bd7987fe8b>
+  
 ## Kesimpulan dan Saran
 ![uji endpoint](https://github.com/Satsujinki99/FP_TKA-C4/assets/151041878/443e26a7-efea-4448-8628-b4cd676c3ccc)
 
