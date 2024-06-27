@@ -37,7 +37,7 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 -----
 
-## Rancangan Arsitektur
+## Rancangan Arsitektur (Notes = perbaiki gambar, harga, dan kalimat penjelasan)
 <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/2ac40946-80a8-4065-b5b2-0e06cc6ef89d>
 
 <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/f71ae97e-f4f0-4a93-b97d-2e9502622e60>
@@ -49,6 +49,7 @@ Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk meng
 
 <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/f1110b82-6b2c-4dd2-bc40-80b870013653>
 
+## Langkah-langkah Implementasi dan Konfigurasi
 
 ## Hasil Pengujian Setiap Endpoint
 ### Pengujian dengan Hoppscotch
