@@ -196,4 +196,9 @@ Disini terlihat setelah ip diuji dari web, website berjalan dengan baik sesuai y
   <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/f5d892f0-948b-496d-9c33-89bd7987fe8b>
   RPS tertinggi terjadi pada spawn rate 500 dengan RPS rata-rata 72,5 dan Peak Concurrency sebesar 341  
 ## VI.) Kesimpulan dan Saran
+#### 1. Response Rate tiap detik pada pengujian locust tergantung pula pada jumlah data pada database MongoDb
+Ketika melakukan pengujian pastikan Anda menghapus database yang sudah ada, agar hasil pengujian bisa maksimal. Sebelumnya kami menguji locust tanpa melakukan penghapusan database terlebih dahulu dan ketika dicek data yang ada pada database kita sudah terlalu banyak sehingga mengganggu kinerja pada Virtual Machine dan Database yang menyebabkan pengujian pada locust tidak maksimal 
+![WhatsApp Image 2024-06-28 at 20 25 50_7c508c80](https://github.com/Satsujinki99/FP_TKA-C4/assets/146155753/c24b1364-9ef8-48c2-9008-60447516e289)
 
+#### 2. Disarankan menggunakan virtual machine dengan spesifikasi yang tinggi
+Semakin tinggi spesifikasi virtual machine yang digunakan maka semakin tinggi pula kemampuannya dalam menangani data yang banyak
