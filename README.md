@@ -9,7 +9,9 @@
 |RM Novian Malcolm B. | 5027231035 |
 |Dzaky Faiq Fayyadhi | 5027231047 |
 
-## Permasalahan 
+Video Demo: 
+
+## I.) Introduction Permasalahan 
 Anda adalah seorang lulusan Teknologi Informasi, sebagai ahli IT, salah satu kemampuan yang harus dimiliki adalah Keampuan merancang, membangun, mengelola aplikasi berbasis komputer menggunakan layanan awan untuk memenuhi kebutuhan organisasi.
 
 Pada suatu saat anda mendapatkan project untuk mendeploy sebuah aplikasi Sentiment Analysis dengan komponen Backend menggunakan python: sentiment-analysis.py dengan spesifikasi sebagai berikut
@@ -37,7 +39,7 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 
 -----
 
-## Rancangan Arsitektur (Notes = perbaiki gambar, harga, dan kalimat penjelasan)
+## II.) Rancangan Arsitektur (Notes = perbaiki gambar, harga, dan kalimat penjelasan)
 <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/2ac40946-80a8-4065-b5b2-0e06cc6ef89d>
 
 <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/122516105/f71ae97e-f4f0-4a93-b97d-2e9502622e60>
@@ -47,18 +49,133 @@ Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk meng
 
 <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/b5d9cd32-21e0-445e-b3c7-b0a531a66106>
 
-<img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/f1110b82-6b2c-4dd2-bc40-80b870013653>
+<img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/51e3a475-2843-4d07-b7ad-5bbfe106ac4a>
 
-## Langkah-langkah Implementasi dan Konfigurasi
 
-## Hasil Pengujian Setiap Endpoint
+## III.) Langkah-langkah Implementasi dan Konfigurasi
+
+| No | Langkah-langkah (Backend) |
+| --- | --- |
+| 1 | `sudo apt update`  |
+| 2 | `cd fp-tka/` |
+| 3 | `cd Resources/` |
+| 4 | `cd BE/` |
+| 5 | `python3 -m venv venv` |
+| 6 | `sudo apt install python3.12-venv` |
+| 7 | `source venv/bin/activate` |
+| 8 | `pip install flask flask_cors pymongo textblob` |
+| 9 | `pip install flask flask_cors pymongo textblob` |
+
+<details>
+
+<summary>Dokumentasi</summary>
+
+### Terminal
+
+You can add text within a collapsed section. 
+
+You can add an image or a code block, too.
+
+```ruby
+   puts "Hello World"
+```
+
+</details>
+
+| No | Langkah-langkah (Frontend) |
+| --- | --- |
+| 1 | `cd fp-tka/`  |
+| 2 | `cd Resources/` |
+| 3 | `cd FE/` |
+| 4 | `sudo apt install nginx` |
+| 5 | `cp index.html /var/www/html` |
+| 6 | `cp styles.css /var/www/html` |
+| 7 | `cd /etc/nginx ` |
+| 8 | `cd sites-available/ ` |
+| 9 | `sudo nano app ` |
+| 10 | `sudo unlink /etc/nginx/sites-enabled/default `  |
+| 11 | `sudo ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled` |
+| 12 | `sudo nginx -t ` |
+| 13 | `sudo systemctl restart nginx` |
+| 14 | `cd /var/www/html` |
+| 15 | `sudo nano index.html ` |
+| 16 | `sudo systemctl restart nginx ` |
+
+<details>
+
+<summary>Dokumentasi</summary>
+
+### Implementasi
+
+konfig app: 
+
+```ruby
+   server {
+	listen 80;
+	listen [::]:80;
+
+	server_name 152.42.237.183;
+
+	root /var/www/html;
+	index index.html;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+} 
+```
+
+</details>
+
+| No | Langkah-langkah buat load balancer dari VM |
+| --- | --- |
+| 1 | `sudo apt install nginx `  |
+| 2 | `sudo nano /etc/nginx/sites-available/default` |
+| 3 | `sudo nginx -t` |
+| 4 | `sudo systemctl restart nginx ` |
+| 5 | `python3 -m venv venv` |
+| 6 | `sudo apt install python3.12-venv` |
+| 7 | `source venv/bin/activate` |
+| 8 | `pip install flask flask_cors pymongo textblob` |
+| 9 | `pip install flask flask_cors pymongo textblob` |
+
+<details>
+
+<summary>Dokumentasi</summary>
+
+### Konfigurasi
+
+```ruby
+   konfig /etc/nginx/sites-available/default: 
+upstream backend {
+    server 152.42.237.183:5000;
+    server 178.128.122.205:5000;
+}
+server {
+    listen 80;
+
+    location / {
+        proxy_pass http://backend;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+</details>
+
+## IV.) Hasil Pengujian Setiap Endpoint
 ### Pengujian dengan Hoppscotch
 <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/8a2ba3bf-cb7d-490f-862a-8e8f95b5f5ac>
+
+<img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/2ecc6752-f328-40c9-acd0-174ff5bbae41>
 
 ### Pengujian dari web
 <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/0b5a0b12-d861-41b0-b7d6-e1c41c208164>
 
-## Hasil Pengujian dan Analisis Loadtesting Locust
+## V.) Hasil Pengujian dan Analisis Loadtesting Locust
 - Peak Concurrency Maksimum (spawn rate 50, load testing 60 detik)
   <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/5ae17505-5d76-411a-818a-f55f1c3c3e92>
 - Peak Concurrency Maksimum (spawn rate 100, load testing 60 detik)
@@ -67,6 +184,9 @@ Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk meng
   <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/8e2ad6e5-63cf-4e7b-8506-a97e7cc3eaed>
 - Peak Concurrency Maksimum (spawn rate 500, load testing 60 detik)
   <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/f5d892f0-948b-496d-9c33-89bd7987fe8b>
+-----
+- RPS Tertinggi (spawn rate 500, load testing 60 detik)
+  <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/f5d892f0-948b-496d-9c33-89bd7987fe8b>
   
-## Kesimpulan dan Saran
+## VI.) Kesimpulan dan Saran
 
