@@ -121,7 +121,7 @@ config app: 
 
 </details>
 
-| No | Langkah-langkah buat load balancer dari VM |
+| No | Langkah-langkah membuat load balancer dari VM |
 | --- | --- |
 | 1 | `sudo apt install nginx `  |
 | 2 | `sudo nano /etc/nginx/sites-available/default` |
