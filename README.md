@@ -40,13 +40,17 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 -----
 
 ## II.) Rancangan Arsitektur 
+#### 1. Gambar Rancangan Harga 
 ![Screenshot 2024-06-28 193653](https://github.com/Satsujinki99/FP_TKA-C4/assets/146155753/d6cbc9b7-2497-40b2-97e3-0a49b46da5cd)
+#### 2. Gambar Rancangan Arsiteknya
 ![Screenshot 2024-06-28 193709](https://github.com/Satsujinki99/FP_TKA-C4/assets/146155753/45bcc125-173e-48c1-86c5-fcd5fd4f0020)
 
 Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk menggunakan Digital Ocean sebagai lingkungan cloud kami. Keputusan ini dibuat karena lingkungan cloud ini paling mudah digunakan dan menawarkan kredit gratis jika Anda memiliki pendidikan github. Dari semua penyedia cloud, kami percaya bahwa Digital Ocean adalah yang paling mudah dipahami. Pada rancangan arsitektur cloud kami, kami menggunakan 3 virtual machine yang berperan sebagai berikut: 1 vmWorker untuk Frontend & Backend, 1 vmWorker untuk Backend dan 1 vm untuk Load Balancer, kami juga menggunakan sebuah Database Server MongoDB sesuai rincian gambar diatas.
 
+#### 3. Gambar tiap Droplets yang digunakan
 <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/b5d9cd32-21e0-445e-b3c7-b0a531a66106>
 
+#### 4. Gambar menu Database MongoDb
 <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/51e3a475-2843-4d07-b7ad-5bbfe106ac4a>
 
 
@@ -105,7 +109,7 @@ You can add an image or a code block, too.
 
 ### Implementasi
 
-konfig app: 
+config app: 
 
 ```ruby
    server {
@@ -185,6 +189,6 @@ server {
 -----
 - RPS Tertinggi (spawn rate 500, load testing 60 detik)
   <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/f5d892f0-948b-496d-9c33-89bd7987fe8b>
-  
+  RPS tertinggi terjadi pada spawn rate 500 dengan RPS 72,5 
 ## VI.) Kesimpulan dan Saran
 
