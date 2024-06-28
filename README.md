@@ -67,13 +67,11 @@ Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk meng
 | 7 | `source venv/bin/activate` |
 | 8 | `pip install flask flask_cors pymongo textblob` |
 
-<details>
 
-<summary>Dokumentasi</summary>
 
 ### Terminal
 
-</details>
+
 
 | No | Langkah-langkah (Frontend) |
 | --- | --- |
@@ -94,9 +92,6 @@ Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk meng
 | 15 | `sudo nano index.html ` |
 | 16 | `sudo systemctl restart nginx ` |
 
-<details>
-
-<summary>Dokumentasi</summary>
 
 ### Implementasi
 
@@ -118,27 +113,19 @@ config app: 
 } 
 ```
 
-</details>
 
-| No | Langkah-langkah membuat load balancer dari VM |
-| --- | --- |
-| 1 | `sudo apt install nginx `  |
-| 2 | `sudo nano /etc/nginx/sites-available/default` |
-| 3 | `sudo nginx -t` |
-| 4 | `sudo systemctl restart nginx ` |
-| 5 | `python3 -m venv venv` |
-| 6 | `sudo apt install python3.12-venv` |
-| 7 | `source venv/bin/activate` |
-| 8 | `pip install flask flask_cors pymongo textblob` |
+#### Langkah-langkah membuat load balancer dari VM 
 
-<details>
-
-<summary>Dokumentasi</summary>
-
-### Konfigurasi
-
-```ruby
-   konfig /etc/nginx/sites-available/default: 
+- instal nginx terlebih dahulu pada device menggunakan command berikut
+```bash
+sudo apt install nginx 
+```
+- atur konfigurasi nginx dengan command berikut
+```bash
+sudo nano /etc/nginx/sites-available/default
+```
+- ubahlah konfigurasinya menjadi seperti ini
+```ruby 
 upstream backend {
     server 152.42.237.183:5000;
     server 178.128.122.205:5000;
@@ -155,9 +142,30 @@ server {
     }
 }
 ```
-
-</details>
-
+- Periksa konfigurasi Nginx untuk memastikan bahwa tidak ada kesalahan sintaksis atau masalah lainnya
+```bash
+sudo nginx -t
+```
+- restart layanan Nginx
+```bash
+sudo systemctl restart nginx
+```
+- buat virtual environment Python baru di direktori bernama venv
+```bash
+python3 -m venv venv
+```
+- Install modul venv untuk Python 3.12, yang diperlukan untuk membuat dan mengelola virtual environment Python.
+```bash
+sudo apt install python3.12-venv
+```
+- Aktifkan virtual enviromentnya
+```bash
+source venv/bin/active
+```
+- Install package python yang diperlukan
+```bash
+pip install flask flask_cors pymongo textblob
+```
 ## IV.) Hasil Pengujian Setiap Endpoint
 ### Pengujian dengan Hoppscotch
 <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/8a2ba3bf-cb7d-490f-862a-8e8f95b5f5ac>
