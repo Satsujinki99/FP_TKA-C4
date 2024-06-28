@@ -66,7 +66,6 @@ Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk meng
 | 6 | `sudo apt install python3.12-venv` |
 | 7 | `source venv/bin/activate` |
 | 8 | `pip install flask flask_cors pymongo textblob` |
-| 9 | `pip install flask flask_cors pymongo textblob` |
 
 <details>
 
