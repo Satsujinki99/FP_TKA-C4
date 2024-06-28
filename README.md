@@ -176,6 +176,7 @@ server {
 
 ### Pengujian dari web
 <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/0b5a0b12-d861-41b0-b7d6-e1c41c208164>
+Disini terlihat setelah ip diuji dari web, website berjalan dengan baik sesuai yang diharapkan 
 
 ## V.) Hasil Pengujian dan Analisis Loadtesting Locust
 - Peak Concurrency Maksimum (spawn rate 50, load testing 60 detik)
