@@ -77,12 +77,12 @@ sudo apt install python3.12-venv
 ```bash
 source venv/bin/activate
 ```
-- instal beberapa package Python yang diperlukan untuk proyek
+- install beberapa package Python yang diperlukan untuk proyek
 ```bash
 pip install flask flask_cors pymongo textblob
 ```
 
-#### Langkah-langkah Frontend
+#### Langkah-langkah untuk Frontend
 - Ubah direktori ke FE
 ```bash
 cd fp-tka/Resource/FE
@@ -154,7 +154,7 @@ sudo systemctl restart nginx
 
 #### Langkah-langkah membuat load balancer dari VM 
 
-- instal nginx terlebih dahulu pada device menggunakan command berikut
+- install nginx terlebih dahulu pada device menggunakan command berikut
 ```bash
 sudo apt install nginx 
 ```
@@ -180,7 +180,7 @@ server {
     }
 }
 ```
-- Periksa konfigurasi Nginx untuk memastikan bahwa tidak ada kesalahan sintaksis atau masalah lainnya
+- periksa konfigurasi Nginx untuk memastikan bahwa tidak ada kesalahan sintaksis atau masalah lainnya
 ```bash
 sudo nginx -t
 ```
@@ -192,15 +192,15 @@ sudo systemctl restart nginx
 ```bash
 python3 -m venv venv
 ```
-- Install modul venv untuk Python 3.12, yang diperlukan untuk membuat dan mengelola virtual environment Python.
+- install modul venv untuk Python 3.12, yang diperlukan untuk membuat dan mengelola virtual environment Python.
 ```bash
 sudo apt install python3.12-venv
 ```
-- Aktifkan virtual enviromentnya
+- aktifkan virtual enviromentnya
 ```bash
 source venv/bin/active
 ```
-- Install package python yang diperlukan
+- install package python yang diperlukan
 ```bash
 pip install flask flask_cors pymongo textblob
 ```
@@ -238,4 +238,4 @@ Ketika melakukan pengujian pastikan Anda menghapus database yang sudah ada, agar
 ![WhatsApp Image 2024-06-28 at 20 25 50_7c508c80](https://github.com/Satsujinki99/FP_TKA-C4/assets/146155753/c24b1364-9ef8-48c2-9008-60447516e289)
 
 #### 2. Disarankan menggunakan virtual machine dengan spesifikasi yang tinggi
-Semakin tinggi spesifikasi virtual machine yang digunakan maka semakin tinggi pula kemampuannya dalam menangani data yang banyak, kami melakukan revisi dengan memangkas harga dari loadbalancing dengan menggantikannya dengan virtual machine berspesifikasi cukup tinggi yang kami konfigurasikan dengan nginx menjadi loadbalancer sehingga fungsinyan masih sama. Hasilnya ketika diuji menggunakan locust, RPS tiap case pengujian meningkat secara signifikan dari sebelumnya.
+Semakin tinggi spesifikasi virtual machine yang digunakan maka semakin tinggi pula kemampuannya dalam menangani data yang banyak, kami melakukan revisi dengan memangkas harga dari loadbalancing dengan menggantikannya dengan virtual machine berspesifikasi cukup tinggi yang kami konfigurasikan dengan nginx menjadi loadbalancer sehingga fungsinya masih sama. Hasilnya ketika diuji menggunakan locust, RPS tiap case pengujian meningkat secara signifikan dari sebelumnya.
