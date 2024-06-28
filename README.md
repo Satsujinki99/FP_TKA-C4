@@ -56,47 +56,58 @@ Setelah memikirkan harga dan spesifikasinya, kami akhirnya memutuskan untuk meng
 
 ## III.) Langkah-langkah Implementasi dan Konfigurasi
 
-| No | Langkah-langkah (Backend) |
-| --- | --- |
-| 1 | `sudo apt update`  |
-| 2 | `cd fp-tka/` |
-| 3 | `cd Resources/` |
-| 4 | `cd BE/` |
-| 5 | `python3 -m venv venv` |
-| 6 | `sudo apt install python3.12-venv` |
-| 7 | `source venv/bin/activate` |
-| 8 | `pip install flask flask_cors pymongo textblob` |
+#### Langkah-langkah untuk Backend 
+- perbarui package dan version terbaru
+```bash
+sudo apt update
+```
+- pindah ke direktori backendnya
+```bash
+cd fp-tka/Resource/BE
+```
+- buat virtual environment Python baru di direktori bernama venv
+```bash
+python3 -m venv venv
+```
+- install modul venv yang diperlukan
+```bash
+sudo apt install python3.12-venv
+```
+- aktifkan virtual environment venv yang baru saja dibuat
+```bash
+source venv/bin/activate
+```
+- instal beberapa package Python yang diperlukan untuk proyek
+```bash
+pip install flask flask_cors pymongo textblob
+```
 
-
-
-### Terminal
-
-
-
-| No | Langkah-langkah (Frontend) |
-| --- | --- |
-| 1 | `cd fp-tka/`  |
-| 2 | `cd Resources/` |
-| 3 | `cd FE/` |
-| 4 | `sudo apt install nginx` |
-| 5 | `cp index.html /var/www/html` |
-| 6 | `cp styles.css /var/www/html` |
-| 7 | `cd /etc/nginx ` |
-| 8 | `cd sites-available/ ` |
-| 9 | `sudo nano app ` |
-| 10 | `sudo unlink /etc/nginx/sites-enabled/default `  |
-| 11 | `sudo ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled` |
-| 12 | `sudo nginx -t ` |
-| 13 | `sudo systemctl restart nginx` |
-| 14 | `cd /var/www/html` |
-| 15 | `sudo nano index.html ` |
-| 16 | `sudo systemctl restart nginx ` |
-
-
-### Implementasi
-
-config app: 
-
+#### Langkah-langkah Frontend
+- Ubah direktori ke FE
+```bash
+cd fp-tka/Resource/FE
+```
+- Install Nginx
+```bash
+sudo apt install nginx
+```
+- salin file index.html
+```bash
+cp index.html /var/www/html
+```
+- salin file styles.css
+```bash
+cp styles.css /var/www/html
+```
+- ubah direktori ke nginx nya
+```bash
+cd /etc/nginx/sites-available
+```
+- buat file konfigurasi baru bernama app
+```bash
+sudo nano app
+```
+- ubah konfigurasinya menjadi seperti ini
 ```ruby
    server {
 	listen 80;
@@ -112,7 +123,34 @@ config app: 
 	}
 } 
 ```
-
+- hapus symlink dari file konfigurasi default nginx
+```bash
+sudo unlink /etc/nginx/sites-enabled/default
+```
+- buat symlink dari file konfigurasi app
+```bash
+sudo ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled
+```
+- periksa konfigurasi nginx
+```bash
+sudo nginx -t
+```
+- restart layanan nginx
+```bash
+sudo systemctl restart nginx
+```
+- ubah direktory kerja
+```bash
+cd var/www/html
+```
+- buka index.html
+```bash
+sudo nano index.html
+```
+- restart nginx lagi agar perubahan pada `index.html` diterapkan
+```bash
+sudo systemctl restart nginx
+```
 
 #### Langkah-langkah membuat load balancer dari VM 
 
