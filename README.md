@@ -180,13 +180,13 @@ server {
 ## V.) Hasil Pengujian dan Analisis Loadtesting Locust
 - Peak Concurrency Maksimum (spawn rate 50, load testing 60 detik)
   <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/5ae17505-5d76-411a-818a-f55f1c3c3e92>
-   Locust menunjukkan Peak Concurrency sebesar 341 dengan RPS rata-rata 72,5 dengan failure 0%
+   Locust menunjukkan Peak Concurrency sekitar 200 dengan RPS rata-rata 63,4 dengan failure 0%
 - Peak Concurrency Maksimum (spawn rate 100, load testing 60 detik)
   <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/ea27f928-152c-4fb7-b89c-b34328653ff2>
-   Locust menunjukkan Peak Concurrency sebesar 341 dengan RPS rata-rata 72,5 dengan failure 0%
+   Locust menunjukkan Peak Concurrency sebesar 253,5 dengan RPS rata-rata 71,1 dengan failure 0%
 - Peak Concurrency Maksimum (spawn rate 200, load testing 60 detik)
   <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/8e2ad6e5-63cf-4e7b-8506-a97e7cc3eaed>
-   Locust menunjukkan Peak Concurrency sebesar 341 dengan RPS rata-rata 72,5 dengan failure 0%
+   Locust menunjukkan Peak Concurrency sebesar 387,25 dengan RPS rata-rata 67,7 dengan failure 0%
 - Peak Concurrency Maksimum (spawn rate 500, load testing 60 detik)
   <img width="1710" alt="image" src=https://github.com/Satsujinki99/FP_TKA-C4/assets/150534107/f5d892f0-948b-496d-9c33-89bd7987fe8b>
   Locust menunjukkan Peak Concurrency sebesar 341 dengan RPS rata-rata 72,5 dengan failure 0%
