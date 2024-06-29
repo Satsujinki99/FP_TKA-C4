@@ -9,7 +9,7 @@
 |RM Novian Malcolm B. | 5027231035 |
 |Dzaky Faiq Fayyadhi | 5027231047 |
 
-Video Demo: 
+Video Demo: https://youtu.be/a4GBnBiH5LA
 
 ## I.) Introduction Permasalahan 
 Anda adalah seorang lulusan Teknologi Informasi, sebagai ahli IT, salah satu kemampuan yang harus dimiliki adalah Keampuan merancang, membangun, mengelola aplikasi berbasis komputer menggunakan layanan awan untuk memenuhi kebutuhan organisasi.
